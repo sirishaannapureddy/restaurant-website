@@ -1,0 +1,8 @@
+{
+  "name": "Luxury Restaurant Website",
+  "description": "An elegant, Michelin-star style restaurant website featuring beautiful food presentation, intuitive reservation, dynamic interactive menu filtering, automated order tracking, offer management, and luxurious dark/light mode styles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom luxury palette colors */
+  --color-gold-50: #fbf8f2;
+  --color-gold-100: #f4edd9;
+  --color-gold-200: #eadcb2;
+  --color-gold-300: #dbbf81;
+  --color-gold-400: #cca057;
+  --color-gold-500: #c2883f;
+  --color-gold-600: #ab6a30;
+  --color-gold-700: #8a4f27;
+  --color-gold-800: #6d3d21;
+  --color-gold-900: #4e2916;
+  --color-gold-950: #2d130a;
+}
+
+@layer base {
+  html, body, #root {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply bg-neutral-950 text-neutral-100 antialiased font-sans transition-colors duration-300;
+  }
+  
+  /* Scrollbar Customization */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cca057;
+    border-radius: 3px;
+  }
+}
+
+/* Luxury card glassmorphism rules */
+.luxury-glass {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(204, 160, 87, 0.15);
+}
+
+.luxury-glass-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(204, 160, 87, 0.2);
+}
+
+/* Parallax parallax scroll styling helper */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
