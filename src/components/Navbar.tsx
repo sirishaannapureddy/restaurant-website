@@ -104,37 +104,75 @@ export default function Navbar() {
         }`}
         id="lux-app-header"
       >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            {/* Gastronomical Brand Emblem */}
-            <Link to="/" className="flex items-center gap-2 group shrink-0">
-              <span className="w-9 h-9 border border-gold-400/50 flex items-center justify-center font-serif font-bold text-gold-400 rounded-lg group-hover:scale-115 transition-transform">
+           
+            <Link to="/" className="flex items-center gap-2 group shrink-0  mr-auto">
+            
+              <span className="w-9 h-9  border border-gold-400/50 flex items-center justify-center font-serif font-bold text-gold-400 rounded-lg group-hover:scale-115 transition-transform">
                 G
               </span>
+             
               <div className="flex flex-col">
                 <span className="font-serif font-extrabold text-lg tracking-widest uppercase text-gold-400 leading-none">
-                  {/* L&apos;Ambroisie */}
+                 
                   The Grand Table
+                 
                 </span>
                 <span className="text-[8px] font-mono tracking-widest text-neutral-400 uppercase">
-                  Michelin Celestial dining
+                  Michelin Celestial dining 
                 </span>
               </div>
-            </Link>
+            </Link> */}
+ 
+
+       <div className="w-full px-2 sm:px-4 lg:px-6">
+  <div className="flex items-center h-20">
+
+    {/* LOGO + TITLE (LEFT SIDE) */}
+    <Link to="/" className="flex items-center gap-2 group shrink-0">
+
+      <span className="w-9 h-9 border border-gold-400/50 flex items-center justify-center font-serif font-bold text-gold-400 rounded-lg group-hover:scale-115 transition-transform">
+        G
+      </span>
+
+      <div className="flex flex-col">
+        <span className="font-serif font-extrabold text-lg tracking-widest uppercase text-gold-400 leading-none">
+          The Grand Table
+        </span>
+        <span className="text-[8px] font-mono tracking-widest text-neutral-400 uppercase">
+          Michelin Celestial dining
+        </span>
+      </div>
+
+    </Link>
+
 
             {/* Desktop Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-4 xl:gap-6 header-navigation">
+            {/* <nav className="hidden lg:flex items-center gap-4 xl:gap-6 header-navigation"> */}
               {/* Home Path */}
-              <NavLink to="/" className={activeLinkStyle}>Home</NavLink>
+              {/* <NavLink to="/" className={activeLinkStyle}>Home</NavLink> */}
 
               {/* Mega-Menu Container Link */}
-              <div 
+              {/* <div 
                 className="relative cursor-pointer py-2 group/mega"
                 onMouseEnter={() => setMegaMenuOpen(true)}
                 onMouseLeave={() => setMegaMenuOpen(false)}
-              >
+              > */}
+
+              <nav className="hidden lg:flex items-center gap-4 xl:gap-6 header-navigation ml-auto">
+  {/* Home Path */}
+  <NavLink to="/" className={activeLinkStyle}>Home</NavLink>
+
+  {/* Mega-Menu Container Link */}
+  <div 
+    className="relative cursor-pointer py-2 group/mega"
+    onMouseEnter={() => setMegaMenuOpen(true)}
+    onMouseLeave={() => setMegaMenuOpen(false)}
+  >
+
                 <div className="flex items-center gap-1 font-semibold text-xs tracking-widest text-neutral-300 group-hover/mega:text-gold-400 uppercase transition-colors">
-                  <span>Grand Menu</span>
+                  <span>Menu</span>
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-300 ${megaMenuOpen ? 'rotate-180' : ''}`} />
                 </div>
 
